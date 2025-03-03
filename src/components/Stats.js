@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import CountUp from "react-countup";
 
 const Stats = () => {
   const statsData = [
-    { value: '10+', label: 'Years of Exceptional Services' },
-    { value: '80+', label: 'Experienced Team Members' },
-    { value: '80+', label: 'Client Across Sectors' },
+    { value: 10, suffix: "+", label: "Years of Exceptional Services" },
+    { value: 80, suffix: "+", label: "Experienced Team Members" },
+    { value: 80, suffix: "+", label: "Client Across Sectors" },
   ];
 
   return (
@@ -14,10 +15,12 @@ const Stats = () => {
           {statsData.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="border border-gray-400 rounded-full h-28 w-28 flex items-center justify-center mb-5">
-                <span className="text-[#f57272] text-3xl font-semibold">{stat.value}</span>
+                <span className="text-[#f57272] text-3xl font-semibold">
+                  <CountUp start={0} end={stat.value} duration={8.5} />{stat.suffix}
+                </span>
               </div>
               <p className="text-sm whitespace-pre-line">
-                {stat.label.split(' ').join('\n')}
+                {stat.label.split(" ").join("\n")}
               </p>
             </div>
           ))}
