@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap items-center gap-4">
-            <Link to="/about-us" className="bg-transparent border border-white text-white px-5 py-2.5 rounded hover:bg-white hover:text-[#f57272] transition duration-300">
+            <Link to="#-us" className="bg-transparent border border-white text-white px-5 py-2.5 rounded hover:bg-white hover:text-[#f57272] transition duration-300">
               Know More →
             </Link>
             <a href="/budgets/2023" className="bg-gray-800 text-white px-5 py-2.5 rounded hover:bg-gray-700 transition duration-300 flex items-center gap-2">

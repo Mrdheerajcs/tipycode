@@ -1,24 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import HomePage from './pages/HomePage';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"; // ✅ Import Layout
+import HomePage from "./pages/HomePage";
+import About from './pages/About';
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            {/* Add other routes as needed */}
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />  {/* Home page inside Layout */}
+          <Route path="/about" element={<About />} />  {/* New page inside Layout */}
+        </Route>
+      </Routes>
     </Router>
   );
 }

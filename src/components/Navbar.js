@@ -51,7 +51,7 @@ const Navbar = () => {
       name: 'COINMEN',
       path: '#',
       submenu: [
-        { name: 'About Us', path: '#' },
+        { name: 'About Us', path: '/about' },
         {
           name: 'Services', path: '#',
           submenu: [

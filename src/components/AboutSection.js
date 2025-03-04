@@ -25,7 +25,7 @@ const AboutSection = () => {
 
           <div className="text-center">
             <Link
-              to="/about-us"
+              to="#-us"
               className="inline-block text-white hover:text-[#f57272] transition duration-300 font-medium"
             >
               Know More →
