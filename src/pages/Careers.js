@@ -1,17 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import aboutPerson from '../assets/AUP.jpg';
+import carrersfoter from '../assets/carrires.jpg';
+
 
 
 const Careers = () => {
-    const numberOfSlashes = 10; // Change this for more slashes
-    const getSlashes = () => {
-        return Array.from({ length: numberOfSlashes }, (_, index) => (
-            <span key={index} className="text-4xl text-gray-700 rotate-1 mx-1">
-                /
-            </span>
-        ));
-    };
+
 
     const careersCollection = [
         {
@@ -99,9 +94,9 @@ const Careers = () => {
                     <h2 className='p-4 text-xl md:text-2xl font-thin text-gray-700'>                <strong><em>Email resume at </em>info@coinmen.com</strong>
                     </h2>
 
-                    <h1 className="p-4 text-4xl text-gray-700 rotate-1 flex">
-            {getSlashes()}
-        </h1>
+                    <h1 className="p-4 text-4xl text-gray-700 ">
+                        <img src={carrersfoter} alt="/////////////" />
+                    </h1>
 
                 </div>
 

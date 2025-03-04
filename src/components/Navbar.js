@@ -75,7 +75,7 @@ const Navbar = () => {
           ]
         },
         { name: 'Careers', path: '/careers' },
-        { name: 'Blogs', path: '#' },
+        { name: 'Blogs', path: '/blog-page' },
       ]
     },
     { name: 'STARTUPS', path: '/startups' },

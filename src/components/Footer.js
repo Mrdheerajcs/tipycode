@@ -30,7 +30,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'About', path: '/about' },
     { name: 'Careers', path: '/careers' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Blog', path: '/blog-page' },
     { name: 'Start-ups', path: '/start-ups' },
     { name: 'Services', path: '/services' },
     { name: 'Doing Business In India', path: '/doing-business-in-india' },
