@@ -74,7 +74,7 @@ const Navbar = () => {
             { name: 'Risk Advisory', path: '#' },
           ]
         },
-        { name: 'Careers', path: '#' },
+        { name: 'Careers', path: '/careers' },
         { name: 'Blogs', path: '#' },
       ]
     },
