@@ -5,11 +5,8 @@ import HomePage from "./pages/HomePage";
 import About from './pages/About';
 import Careers from './pages/Careers';
 import BlogPage from './pages/BlogPage';
-import StartupPage from './pages/StartupPage'
+import StartupPage from './pages/StartupPage';
 import Login from "./pages/Login";
-
-
-
 
 import Dashboard from "./Masters/Page/Dashboard";
 import Education from "./Masters/Page/Education";
@@ -18,8 +15,7 @@ import Projects from "./Masters/Page/Projects";
 import Skills from "./Masters/Page/Skills";
 import PrivateRoute from "./ApiConfig/PrivateRoute";
 
-
-
+// Protected Routes Array
 const protectedRoutes = [
   {
     path: "/dashboard/*",
@@ -34,20 +30,17 @@ const protectedRoutes = [
   },
 ];
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/tipycode">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about" element={<About />} /> 
-          <Route path="/careers" element={<Careers />} /> 
-          <Route path="/blog-page" element={<BlogPage />} /> 
-          <Route path="/start-up" element={<StartupPage />} /> 
-          <Route path="/login" element={<Login />} /> 
-
-
+          <Route path="about" element={<About />} /> 
+          <Route path="careers" element={<Careers />} /> 
+          <Route path="blog-page" element={<BlogPage />} /> 
+          <Route path="start-up" element={<StartupPage />} /> 
+          <Route path="login" element={<Login />} /> 
         </Route>
 
         {protectedRoutes.map((route) => (
