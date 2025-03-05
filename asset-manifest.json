@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mrdheerajcs.github.io/tipycode/static/css/main.f3876559.css",
-    "main.js": "/Mrdheerajcs.github.io/tipycode/static/js/main.c02e30a7.js",
+    "main.js": "/Mrdheerajcs.github.io/tipycode/static/js/main.0d5f6f05.js",
     "static/js/453.be82b877.chunk.js": "/Mrdheerajcs.github.io/tipycode/static/js/453.be82b877.chunk.js",
     "static/media/client1.png": "/Mrdheerajcs.github.io/tipycode/static/media/client1.5faf09a7795d28bf5a2b.png",
     "static/media/client2.png": "/Mrdheerajcs.github.io/tipycode/static/media/client2.5faf09a7795d28bf5a2b.png",
@@ -20,11 +20,11 @@
     "static/media/slick.woff": "/Mrdheerajcs.github.io/tipycode/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Mrdheerajcs.github.io/tipycode/index.html",
     "main.f3876559.css.map": "/Mrdheerajcs.github.io/tipycode/static/css/main.f3876559.css.map",
-    "main.c02e30a7.js.map": "/Mrdheerajcs.github.io/tipycode/static/js/main.c02e30a7.js.map",
+    "main.0d5f6f05.js.map": "/Mrdheerajcs.github.io/tipycode/static/js/main.0d5f6f05.js.map",
     "453.be82b877.chunk.js.map": "/Mrdheerajcs.github.io/tipycode/static/js/453.be82b877.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3876559.css",
-    "static/js/main.c02e30a7.js"
+    "static/js/main.0d5f6f05.js"
   ]
 }
