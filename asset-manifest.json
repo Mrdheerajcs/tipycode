@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Mrdheerajcs.github.io/tipycode/static/css/main.f3876559.css",
+    "main.js": "/Mrdheerajcs.github.io/tipycode/static/js/main.c02e30a7.js",
+    "static/js/453.be82b877.chunk.js": "/Mrdheerajcs.github.io/tipycode/static/js/453.be82b877.chunk.js",
+    "static/media/client1.png": "/Mrdheerajcs.github.io/tipycode/static/media/client1.5faf09a7795d28bf5a2b.png",
+    "static/media/client2.png": "/Mrdheerajcs.github.io/tipycode/static/media/client2.5faf09a7795d28bf5a2b.png",
+    "static/media/client3.png": "/Mrdheerajcs.github.io/tipycode/static/media/client3.5faf09a7795d28bf5a2b.png",
+    "static/media/client4.png": "/Mrdheerajcs.github.io/tipycode/static/media/client4.5faf09a7795d28bf5a2b.png",
+    "static/media/client5.png": "/Mrdheerajcs.github.io/tipycode/static/media/client5.5faf09a7795d28bf5a2b.png",
+    "static/media/client6.png": "/Mrdheerajcs.github.io/tipycode/static/media/client6.5faf09a7795d28bf5a2b.png",
+    "static/media/alliance-logo.svg": "/Mrdheerajcs.github.io/tipycode/static/media/alliance-logo.71ef996dfaf2a1d2b42998acc682bd4a.svg",
+    "static/media/carrires.jpg": "/Mrdheerajcs.github.io/tipycode/static/media/carrires.1148e6e0c25c13804e42.jpg",
+    "static/media/blogs3.jpg": "/Mrdheerajcs.github.io/tipycode/static/media/blogs3.c3040f626d02736fef62.jpg",
+    "static/media/corporate-restructuring.svg": "/Mrdheerajcs.github.io/tipycode/static/media/corporate-restructuring.8bcd94e89f6a2e070e4c9e24d4090c9d.svg",
+    "static/media/logo.svg": "/Mrdheerajcs.github.io/tipycode/static/media/logo.24fe41ff173c92d2db5371b38f518861.svg",
+    "static/media/slick.svg": "/Mrdheerajcs.github.io/tipycode/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Mrdheerajcs.github.io/tipycode/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Mrdheerajcs.github.io/tipycode/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Mrdheerajcs.github.io/tipycode/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Mrdheerajcs.github.io/tipycode/index.html",
+    "main.f3876559.css.map": "/Mrdheerajcs.github.io/tipycode/static/css/main.f3876559.css.map",
+    "main.c02e30a7.js.map": "/Mrdheerajcs.github.io/tipycode/static/js/main.c02e30a7.js.map",
+    "453.be82b877.chunk.js.map": "/Mrdheerajcs.github.io/tipycode/static/js/453.be82b877.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3876559.css",
+    "static/js/main.c02e30a7.js"
+  ]
+}
