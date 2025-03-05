@@ -31,7 +31,7 @@ const Footer = () => {
     { name: 'About', path: '/about' },
     { name: 'Careers', path: '/careers' },
     { name: 'Blog', path: '/blog-page' },
-    { name: 'Start-ups', path: '/start-ups' },
+    { name: 'Start-ups', path: '/start-up' },
     { name: 'Services', path: '/services' },
     { name: 'Doing Business In India', path: '/doing-business-in-india' },
     { name: 'Company Incorporation', path: '/company-incorporation' },

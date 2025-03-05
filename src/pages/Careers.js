@@ -91,7 +91,7 @@ const Careers = () => {
                 ))}
 
                 <div className=''>
-                    <h2 className='p-4 text-xl md:text-2xl font-thin text-gray-700'>                <strong><em>Email resume at </em>info@coinmen.com</strong>
+                    <h2 className='p-4 text-xl md:text-2xl font-thin text-gray-700'>                <strong><em>Email resume at </em>info@tipycode.com</strong>
                     </h2>
 
                     <h1 className="p-4 text-4xl text-gray-700 ">

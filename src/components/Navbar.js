@@ -78,7 +78,7 @@ const Navbar = () => {
         { name: 'Blogs', path: '/blog-page' },
       ]
     },
-    { name: 'STARTUPS', path: '/startups' },
+    { name: 'STARTUPS', path: '/start-up' },
     {
       name: 'BUSINESS IN INDIA',
       path: '#',

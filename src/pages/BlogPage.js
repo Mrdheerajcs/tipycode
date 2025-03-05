@@ -182,7 +182,7 @@ const BlogPage = () => {
                                     href={social.path}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-[#f57272] transition duration-200"
+                                    className="text-gray-400 hover:text-[#9c52fc] transition duration-200"
                                     aria-label={`Visit our ${social.path.split('/').pop()} page`}
                                 >
                                     {React.cloneElement(social.icon, { size: 30, className: "md:size-45" })}
@@ -199,7 +199,7 @@ const BlogPage = () => {
                                             placeholder="Search blogs..."
                                             value={searchQuery}
                                             onChange={(e) => setSearchQuery(e.target.value)}
-                                            className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            className="text-black w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         />
                                         <span className="absolute left-3 top-3 text-gray-400">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
