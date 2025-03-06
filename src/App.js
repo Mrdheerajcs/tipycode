@@ -6,6 +6,10 @@ import About from "./pages/About";
 import Careers from "./pages/Careers";
 import BlogPage from "./pages/BlogPage";
 import StartupPage from "./pages/StartupPage";
+import TipyDesks from "./pages/TipyDesks";
+import Desks from "./pages/Desks";
+import DoingBusinessInIndia from "./pages/DoingBusinessIndia";
+
 import Login from "./pages/Login";
 
 import Dashboard from "./Masters/Page/Dashboard";
@@ -40,6 +44,10 @@ function App() {
           <Route path="careers" element={<Careers />} />
           <Route path="blog-page" element={<BlogPage />} />
           <Route path="start-up" element={<StartupPage />} />
+          <Route path="desks" element={<Desks />} />
+          <Route path="typidesk" element={<TipyDesks />} />
+          <Route path="doing-business-in-ndia" element={<DoingBusinessInIndia />} />
+
           <Route path="login" element={<Login />} />
         </Route>
 

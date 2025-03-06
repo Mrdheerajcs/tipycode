@@ -83,13 +83,12 @@ const Navbar = () => {
       name: 'BUSINESS IN INDIA',
       path: '#',
       submenu: [
-        { name: 'Doing Business in India', path: '/doing-business-in-india' },
-        { name: 'Desks', path: '/desk' },
+        { name: 'Doing Business in India', path: '/doing-business-in-ndia' },
+        { name: 'Desks', path: '/desks' },
       ]
     },
   ];
 
-  // Render a mobile menu item with potential submenus
   const renderMobileMenuItem = (item, index, level = 0) => {
     const isActive = activeMenus.mobile[level] === index;
     const hasSubmenu = item.submenu && item.submenu.length > 0;
