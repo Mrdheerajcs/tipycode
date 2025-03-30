@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_HOST } from "../../ApiConfig/ApiConfig";
-import Popup from "../componrnts/Popup";
+import Popup from "../components/Popup";
 import {FaEdit , FaSearch, FaTrash  } from "react-icons/fa";
 
 

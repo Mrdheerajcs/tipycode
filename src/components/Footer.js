@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaTwitter, FaArrowRight, FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube, FaSkype } from 'react-icons/fa';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isVisible, setIsVisible] = useState(false);
+  const [rightClickCount, setRightClickCount] = useState(0);
+  const [showInput, setShowInput] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
 
-  // Toggle visibility of the "Back to top" button
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -38,7 +41,7 @@ const Footer = () => {
     { name: 'Investing Business In India', path: '/investing-business-in-india' },
     { name: 'Direct Tax', path: '/direct-tax' },
     { name: 'Transfer Pricing Regulations', path: '/transfer-pricing-regulations' },
-    { name: 'GST', path: '/gst' },
+    { name: 'GST', path: '/test' },
     { name: 'Expatriate Tax', path: '/expatriate-tax' },
   ];
 
@@ -66,6 +69,36 @@ const Footer = () => {
     { icon: <FaYoutube />, path: 'https://www.youtube.com/tipycode' },
     { icon: <FaSkype />, path: 'skype:tipycode?call' },
   ];
+
+  const handleRightClick = (event) => {
+    event.preventDefault();
+
+    setRightClickCount((prev) => {
+      const newCount = prev + 1;
+
+      if (newCount === 2) {
+        setShowInput(true);
+      }
+
+      return newCount;
+    });
+  };
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      if (inputValue.toLowerCase() === "login") {
+        navigate("/login");
+        setShowInput(false);
+      } else {
+        setShowInput(false);
+        setRightClickCount(0); 
+      }
+    }
+  };
 
   return (
     <footer className="bg-gray-800 text-white pt-16 pb-6">
@@ -148,7 +181,18 @@ const Footer = () => {
                     All Rights Reserved
                   </p>
                 </div>
+                <div className="p-6">
+                  <p
+                    className=" border-2 border-gray-800 h-16 w-36 flex items-center justify-center cursor-pointer"
+                    onContextMenu={handleRightClick}
+                  >
 
+                  </p>
+
+                  {showInput && <input type="text" value={inputValue}
+                    onChange={handleChange}
+                    onKeyDown={handleKeyPress} className="border-2 text-black border-blue-600 mt-2 p-1" placeholder="for login" />}
+                </div>
 
                 {/* Social Links */}
                 <div className="flex space-x-4">
@@ -174,7 +218,7 @@ const Footer = () => {
               onClick={scrollToTop}
               className="flex flex-col items-center text-gray-400 hover:text-[#f57272] transition duration-200"
             >
-              <span className="flex text-sm -rotate-90 whitespace-nowrap">Back to Top<FaArrowRight className="mt-1 ml-1"/></span>
+              <span className="flex text-sm -rotate-90 whitespace-nowrap">Back to Top<FaArrowRight className="mt-1 ml-1" /></span>
             </button>
           </div>
         </div>

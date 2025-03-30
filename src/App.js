@@ -11,9 +11,11 @@ import Desks from "./pages/Desks";
 import DoingBusinessInIndia from "./pages/DoingBusinessIndia";
 
 import Login from "./pages/Login";
+import TestCode from "./Masters/Page/TestCode";
 
 import Dashboard from "./Masters/Page/Dashboard";
-import Education from "./Masters/Page/Education";
+import MasterHome from "./Masters/Page/MasterHome";
+import SlideMaster from "./Masters/Page/SlideMaster";
 import Experience from "./Masters/Page/Experience";
 import Projects from "./Masters/Page/Projects";
 import Skills from "./Masters/Page/Skills";
@@ -26,7 +28,8 @@ const protectedRoutes = [
     element: <Dashboard />,
     allowedRoles: ["USER", "ADMIN"],
     children: [
-      { path: "education", element: <Education />, allowedRoles: ["USER", "ADMIN"] },
+      { path: "master-home", element: <MasterHome />, allowedRoles: ["USER", "ADMIN"] },
+      { path: "slide-master", element: <SlideMaster />, allowedRoles: ["USER", "ADMIN"] },
       { path: "experience", element: <Experience />, allowedRoles: ["USER", "ADMIN"] },
       { path: "projects", element: <Projects />, allowedRoles: ["USER", "ADMIN"] },
       { path: "skills", element: <Skills />, allowedRoles: ["USER", "ADMIN"] },
@@ -47,6 +50,7 @@ function App() {
           <Route path="desks" element={<Desks />} />
           <Route path="typidesk" element={<TipyDesks />} />
           <Route path="doing-business-in-ndia" element={<DoingBusinessInIndia />} />
+          <Route path="test" element={<TestCode />} />
 
           <Route path="login" element={<Login />} />
         </Route>

@@ -1,23 +1,28 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import Sidebar from "../Layout/Sidebar";
-import Header from "../Layout/Header";
-import Footer from "../Layout/Footer";
 import { Outlet } from "react-router-dom";
-const Dashboard = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleSidebar = () => setIsOpen(!isOpen);
+import Sidebar from "../Layout/Sidebar";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
+const Dashboard = () => {
   return (
-    <div className="flex h-screen flex-col md:flex-row">
-      <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
-      <div className="flex-1 flex flex-col">
-        <Header toggle={toggleSidebar} />
-        <main className="flex-1 p-5 overflow-auto">
-        <Outlet />
+    <div className="flex flex-col h-screen">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Main Content Section */}
+      <div className="flex flex-1 mt-[5%]">
+        {/* Sidebar */}
+        <Sidebar />
+
+        {/* Outlet (Main Content) */}
+        <main className="flex-1 p-5 overflow-auto bg-white rounded-lg shadow-md">
+          <Outlet />
         </main>
-        <Footer />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
